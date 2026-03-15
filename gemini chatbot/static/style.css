@@ -1,0 +1,118 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    height: 100vh;
+    overflow: hidden;
+    color: #333;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* ===== CHAT SECTION ===== */
+.chat-section {
+    flex: 3;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-section h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* ===== CHAT BOX ===== */
+#chat-box {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px;
+    overflow-y: auto;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+    color: white;
+}
+
+#chat-box p {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+#chat-box b {
+    color: #ffd700;
+}
+
+/* ===== INPUT AREA ===== */
+.input-area {
+    display: flex;
+    margin-top: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+button {
+    margin-left: 10px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    background: #ff9800;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #ff5722;
+    transform: scale(1.05);
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    color: #2a5298;
+}
+
+#history div {
+    background: #f4f6fb;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#history small {
+    color: gray;
+    font-size: 11px;
+}
+
+/* ===== SCROLLBAR STYLE ===== */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.5);
+    border-radius: 10px;
+}
